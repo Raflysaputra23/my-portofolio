@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Web Portofolio berisikan biodata saya">
+	<meta name="author" content="M. Rafly Saputra">
+	<meta name="keywords" content="HTML, CSS, Javascript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<!-- SCRIPT & STYLE TAILWIND CSS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+    tailwind.config = {
+    	darkMode: 'class',
+      theme: {
+        extend: {
+          
+        }
+      }
+    }
+  	</script>
+  	<style type="text/tailwindcss">
+  		@tailwind components;
+  		@tailwind utilities;
+  		@tailwind base;
+
+  		@layer base {
+
+  			@keyframes animasi-show {
+  				0% {
+  					@apply opacity-0 top-[2rem];
+  				}
+  				100% {
+  					@apply opacity-100 top-[4rem];
+  				}
+  			}
+
+  		}
+
+  		@layer utility {
+  			.font-poppins {
+  				font-family: 'Poppins', sans-serif;
+  			}
+
+  			.font-oswald {
+  				font-family: 'Oswald', sans-serif;
+  			}
+
+  			.font-tillana {
+  				font-family: 'Tillana', sans-serif;
+  			}
+
+  			.text-main {
+  				@apply text-cyan-400;
+  			}
+
+  			.hover-menu-lg {
+  				@apply after:content-[''] after:border-b after:scale-x-[0] after:opacity-0 after:block after:pt-1 hover:after:scale-x-[.7] hover:after:opacity-100 after:transition-all;
+  			}
+
+  			.hover-menu {
+  				@apply hover:bg-cyan-300 hover:text-cyan-700;
+  			}
+
+  			.show-menu {
+  				animation: animasi-show 1s ease forwards;
+  			}
+
+  		}
+
+  		@layer components {
+
+  			.btn-content {
+  				@apply p-2 text-cyan-500 border border-cyan-500 rounded-lg font-poppins text-sm hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_10px_rgba(0,0,0,0.3)] hover:shadow-cyan-500 transition-all;
+  			}
+
+  			.card {
+  				@apply rounded-md shadow-md p-3 dark:bg-cyan-900 bg-slate-200;
+  			}
+
+  			.container {
+  				@apply md:w-3/5;
+  			}
+
+  			.input-group {
+  				@apply w-[100%] my-3 font-poppins;
+  			}
+
+  			.form-control {
+  				@apply rounded-md px-3 py-2 outline-0 border w-[100%] focus:shadow-[0_0_10px_rgb(0,0,150)] transition-all;
+  			}
+  		}
+  		
+  	</style>
+                                                  
+
+	<!-- BOX ICONS -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- FOONTS GOOGLE -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&family=Tillana&display=swap" rel="stylesheet">
+
+</head>
+<body class="dark:bg-cyan-950">
+
+	<!-- BUTTON BACK TO TOP -->
+	<a id="back-to-top" href="#navbar" class="w-[40px] h-[40px] flex rounded-full fixed bottom-0 end-0 mb-10 me-8 dark:bg-cyan-800 bg-slate-300 z-50 shadow hidden hover:-translate-y-[5px] hover:shadow-cyan-900 transition-all" role="button" aria-label="button page up" aria-hidden="true"><i class="bx bx-chevron-up text-xl dark:text-white m-auto"></i></a>
+	<!-- BUTTON BACK TO TOP -->
+
+	<!-- NAVBAR -->
+	<header>
+	<nav id="navbar" class="bg-slate-200 dark:bg-cyan-950">
+		<div class="w-[100%] md:w-[90%] p-3 mx-auto flex items-center relative">
+			<h1 class="font-tillana text-lg text-cyan-800 font-bold dark:text-white basis-[60%] md:basis-[40%]"><i class="bx bx-code-alt"></i> Rafly Saputra</h1>
+			<div id="dialog-menu" class="w-[8.5rem] rounded-md border p-1 backdrop-blur bg-blue-950/30 absolute end-0 me-2 top-[4rem] show-menu hidden md:bg-transparent md:w-[100%] md:h-[100%] basis-[40%] md:basis-[60%] md:border-0 md:p-0 md:static md:flex md:gap-4 md:items-center md:justify-end md:me-[0]" aria-hidden="true">
+				<a href="#home" class="font-poppins block md:inline p-2 md:p-0 rounded-md dark:text-slate-200 text-sm hover-menu md:hover:bg-transparent md:hover-menu-lg md:hover:text-white transition-all" role="buttonMenu" aria-label="linkToHome" tabindex="1"><i class="bx bx-home inline md:hidden lg:inline"></i> Home</a>
+				<a href="#about" class="font-poppins block md:inline p-2 md:p-0 rounded-md dark:text-slate-200 text-sm hover-menu md:hover:bg-transparent md:hover-menu-lg md:hover:text-white transition-all" role="buttonMenu" aria-label="linkToAbout" tabindex="2"><i class="bx bx-user-pin inline md:hidden lg:inline"></i> About</a>
+				<a href="#project" class="font-poppins block md:inline p-2 md:p-0 rounded-md dark:text-slate-200 text-sm hover-menu md:hover:bg-transparent md:hover-menu-lg md:hover:text-white transition-all" role="buttonMenu" aria-label="linkToProject" tabindex="3"><i class="bx bx-home inline md:hidden lg:inline"></i> Project</a>
+				<a href="#skill" class="font-poppins block md:inline p-2 md:p-0 rounded-md dark:text-slate-200 text-sm hover-menu md:hover:bg-transparent md:hover-menu-lg md:hover:text-white transition-all" role="buttonMenu" aria-label="linkToSkill" tabindex="4"><i class="bx bx-bar-chart-alt-2 inline md:hidden lg:inline"></i> Skill</a>
+				<a href="#contact" class="btn-content block my-1 text-center items-center gap-x-1 md:my-0 md:flex md:ms-2" role="buttonMenu" aria-label="linkToContact" tabindex="5"><i class="bx bxs-contact"></i> Contact</a>
+				<a id="darkMode" class="dark:bg-cyan-900 rounded-md md:rounded-full inline-block w-[100%] h-8 relative shadow mt-1 md:w-8 md:mt-0 overflow-hidden" role="button" aria-label="darkMode">
+					<i class="bx bxs-moon absolute start-[50%] -top-[50%] -translate-x-[50%] -translate-y-[50%] dark:text-slate-200 transition-[2s_ease-in-out]"></i>
+					<i class="bx bxs-sun absolute start-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] dark:text-slate-200 transition-[2s_ease-in-out]"></i>
+				</a>
+			</div>
+			<div class="flex justify-end basis-[70%] md:hidden">
+				<button id="btn-hamburger" type="button" class="" role="button" aria-label="buttonForViewMenu" aria-expanded="false" aria-controls="dialog-menu">
+					<i class="bx bx-menu dark:text-white text-2xl"></i>
+				</button>
+			</div>
+		</div>
+	</nav>
+	</header>
+	<!-- END NAVBAR -->
+
+	<!-- KONTEN MAIN -->
+	<main>
+	<!-- HERO -->
+	<section id="home">
+		<article class="container p-3 mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 items-center">
+			<section class="pe-3 py-8">
+				<p class="font-poppins dark:text-slate-200">Hello Everyone,</p>
+				<h1 class="font-oswald text-cyan-800 dark:text-white text-3xl">I,M M.Rafly Saputra</h1>
+				<h2 class="font-poppins dark:text-slate-100 text-lg mt-1">Front-End Dev Web & Back-End Dev Web</h2>
+				<p class="mt-2 font-poppins dark:text-slate-200 text-sm">Saya adalah seorang progammer pemula yang ingin menjadi seorang full-stack developer dibidang web & android saya lagi tahap pembelajaran dan akan terus belajar hingga cita-cita saya tercapai</p>
+				<a href="" class="btn-content mt-4 flex items-center justify-center hover:translate-x-1 w-[9rem] capitalize" role="button" aria-label="buttonViewProject">View to project <i class="bx bx-chevron-right text-lg"></i></a>
+			</section>
+			<section class="ps-3 py-8">
+				<img src="img/Asset 3.svg" alt="" class="w-[80%] mx-auto aspect-video md:aspect-square">
+			</section>
+		</article>
+	</section>
+	<!-- END HERO -->
+
+	<!-- SECTION ABOUT -->
+	<section id="about">
+		<article class="container p-3 mx-auto py-10 grid grid-cols-1 justify-center">
+			<header class="text-center py-8">
+				<p class="text-main font-poppins">About Me</p>
+				<h1 class="dark:text-white font-poppins text-2xl font-bold">Tentang Saya</h1>
+			</header>
+			<section class="py-8 grid grid-cols-1 gap-x-4 gap-y-3 justify-items-center lg:grid-cols-[1fr_30%]">
+
+				<div class="card font-poppins relative">
+					<section class="mb-6">
+						<h1 class="text-main text-lg mb-2">About Me</h1>
+						<p class="dark:text-slate-300 text-sm">Saya adalah seorang mahasiswa yang ingin terjun kedunia IT, saya sangat suka bermain komputer hingga saya bisa mempelajari beberapa bahasa pemrograman, saya akan terus belajar agar saya bisa menjadi seorang Full Stack Web Dev. Hobi saya adalah bermain komputer, suka mempelajari sesuatu yang saya suka dan memperdalam ilmu tersebut, suka membuat hal hal baru.</p>
+					</section>
+					<section>
+						<h1 class="text-main text-lg mb-2">Media</h1>
+						<div class="flex gap-x-2 items-center">
+							<a href="" class="w-8 h-8 rounded-md border border-green-500 flex hover:bg-green-500 group"><i class="bx bxl-whatsapp text-green-500 text-xl m-auto group-hover:text-white" role="link" aria-label="linkToWhatsaap"></i></a>
+							<a href="" class="w-8 h-8 rounded-md border border-pink-500 flex hover:bg-pink-500 group" role="link" aria-label="linkToInstagram"><i class="bx bxl-instagram text-pink-500 text-xl m-auto group-hover:text-white"></i></a>
+							<a href="" class="w-8 h-8 rounded-md border border-blue-600 flex hover:bg-blue-600 group" role="link" aria-label="linkToFacebook"><i class="bx bxl-facebook text-blue-600 text-xl m-auto group-hover:text-white"></i></a>
+							<a href="" class="w-8 h-8 rounded-md border border-black flex hover:bg-black group" role="link" aria-label="linkToGithub"><i class="bx bxl-github text-black text-xl m-auto group-hover:text-white"></i></a>
+							<a href="" class="w-8 h-8 rounded-md border border-black flex hover:bg-black group" role="link" aria-label="linkToTiktok"><i class="bx bxl-tiktok text-black text-xl m-auto group-hover:text-white"></i></a>
+						</div>
+					</section>
+				</div>
+
+				<div class="card font-poppins flex relative">
+					<img src="img/myFoto.jpg" alt="" class="w-[40%] m-auto rounded-md lg:w-[100%]">
+				</div>
+
+			</section>
+		</article>
+	</section>
+	<!-- END SECTION ABOUT -->
+
+	<!-- SECTION PROJECT -->
+	<section id="project">
+		<article class="container p-3 mx-auto py-10 grid grid-cols-1 justify-center">
+			<header class="text-center py-8">
+				<p class="text-main font-poppins">Project Me</p>
+				<h1 class="dark:text-white font-poppins text-2xl font-bold">Projek Saya</h1>
+			</header>
+			<section class="py-8 grid grid-cols-1 lg:grid-cols-2 gap-x-3 gap-y-4">
+				<div class="card">
+					
+				</div>
+				<div class="card">
+					
+				</div>
+				<div class="card">
+					
+				</div>
+				<div class="card">
+					
+				</div>
+			</section>
+		</article>
+	</section>
+	<!-- END SECTION PROJECT -->
+
+	<!-- SECTION SKILL -->
+	<section id="skill">
+		<article class="container p-3 mx-auto py-10 grid grid-cols-1 justify-center">
+			<header class="text-center py-8">
+				<p class="text-main font-poppins">Skill Me</p>
+				<h1 class="dark:text-white font-poppins text-2xl font-bold">Skill Saya</h1>
+			</header>
+			<section class="py-8 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-2 gap-y-3 justify-center">
+				<div class="card flex"><img src="img/HTML.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all"></div>
+				<div class="card flex"><img src="img/CSS.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all"></div>
+				<div class="card flex"><img src="img/JS.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all"></div>
+				<div class="card flex"><img src="img/PHP.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all"></div>
+				<div class="card flex"><img src="img/GIT.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all"></div>
+				<div class="card flex"><img src="img/BOOTSTRAP.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all"></div>
+				<div class="card flex"><img src="img/MYSQL.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all"></div>
+				<div class="card flex"><img src="img/TAILWIND CSS.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all"></div>
+			</section>
+		</article>
+	</section>
+	<!-- END SECTION SKILL -->
+
+	<!-- SECTION CONTACT -->
+	<section id="contact">
+		<article class="container p-3 mx-auto py-10 grid grid-cols-1 justify-center">
+			<header class="text-center py-8">
+				<p class="text-main font-poppins">Contact Me</p>
+				<h1 class="dark:text-white font-poppins text-2xl font-bold">Kontak Saya</h1>
+			</header>
+			<section class="py-8 w-[100%] lg:w-[80%] mx-auto">
+				<div class="input-group">
+					<label for="username" class="dark:text-white text-md">Username</label>
+					<input type="text" id="username" class="form-control mt-2">
+				</div>
+				<div class="input-group">
+					<label for="email" class="dark:text-white text-md">Email</label>
+					<input type="text" id="email" class="form-control mt-2">
+				</div>
+				<div class="input-group">
+					<label for="no-telp" class="dark:text-white text-md">No. Telp</label>
+					<input type="text" id="no-telp" class="form-control mt-2">
+				</div>
+				<div class="input-group">
+					<label for="pesan" class="dark:text-white text-md">Pesan</label>
+					<textarea name="pesan" id="pesan" cols="30" rows="5" class="form-control mt-2"></textarea>
+				</div>
+				<div class="input-group">	
+					<button type="button" class="btn-content px-4">Kirim</button>
+				</div>
+			</section>
+		</article>
+	</section>
+	<!-- END SECTION CONTACT -->
+	</main>
+	<!-- END KONTEN MAIN -->
+
+	<!-- SECTION FOOTER -->
+	<footer id="footer" class="dark:bg-cyan-900 bg-slate-200">
+		<div class="w-[100%] md:w-[90%] p-3 mx-auto py-10">
+			
+		</div>
+	</footer>
+	<!-- END SECTION FOOTER -->
+
+
+<script type="module" src="js/script.js"></script>
+
+</body>
+</html>
