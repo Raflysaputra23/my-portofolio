@@ -103,8 +103,12 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&family=Tillana&display=swap" rel="stylesheet">
 
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
-<body class="dark:bg-cyan-950">
+<body class="dark:bg-cyan-950 overflow-x-hidden">
+
 
 	<!-- BUTTON BACK TO TOP -->
 	<a id="back-to-top" href="#navbar" class="w-[40px] h-[40px] flex rounded-full fixed bottom-0 end-0 mb-10 me-8 dark:bg-cyan-800 bg-slate-300 z-50 shadow hidden hover:-translate-y-[5px] hover:shadow-cyan-900 transition-all" role="button" aria-label="button page up" aria-hidden="true"><i class="bx bx-chevron-up text-xl dark:text-white m-auto"></i></a>
@@ -114,20 +118,20 @@
 	<header>
 	<nav id="navbar" class="bg-slate-200 dark:bg-cyan-950">
 		<div class="w-[100%] md:w-[90%] p-3 mx-auto flex items-center relative">
-			<h1 class="font-tillana text-lg text-cyan-800 font-bold dark:text-white basis-[60%] md:basis-[40%]"><i class="bx bx-code-alt"></i> Rafly Saputra</h1>
+			<h1 class="font-tillana text-lg text-cyan-800 font-bold dark:text-white basis-[60%] md:basis-[40%]" data-aos="fade-right"><i class="bx bx-code-alt"></i> Rafly Saputra</h1>
 			<div id="dialog-menu" class="w-[8.5rem] rounded-md border p-1 backdrop-blur bg-blue-950/30 absolute end-0 me-2 top-[4rem] show-menu hidden md:bg-transparent md:w-[100%] md:h-[100%] basis-[40%] md:basis-[60%] md:border-0 md:p-0 md:static md:flex md:gap-4 md:items-center md:justify-end md:me-[0]" aria-hidden="true">
-				<a href="#home" class="font-poppins block md:inline p-2 md:p-0 rounded-md dark:text-slate-200 text-sm hover-menu md:hover:bg-transparent md:hover-menu-lg md:hover:text-white transition-all" role="buttonMenu" aria-label="linkToHome" tabindex="1"><i class="bx bx-home inline md:hidden lg:inline"></i> Home</a>
-				<a href="#about" class="font-poppins block md:inline p-2 md:p-0 rounded-md dark:text-slate-200 text-sm hover-menu md:hover:bg-transparent md:hover-menu-lg md:hover:text-white transition-all" role="buttonMenu" aria-label="linkToAbout" tabindex="2"><i class="bx bx-user-pin inline md:hidden lg:inline"></i> About</a>
-				<a href="#project" class="font-poppins block md:inline p-2 md:p-0 rounded-md dark:text-slate-200 text-sm hover-menu md:hover:bg-transparent md:hover-menu-lg md:hover:text-white transition-all" role="buttonMenu" aria-label="linkToProject" tabindex="3"><i class="bx bx-home inline md:hidden lg:inline"></i> Project</a>
-				<a href="#skill" class="font-poppins block md:inline p-2 md:p-0 rounded-md dark:text-slate-200 text-sm hover-menu md:hover:bg-transparent md:hover-menu-lg md:hover:text-white transition-all" role="buttonMenu" aria-label="linkToSkill" tabindex="4"><i class="bx bx-bar-chart-alt-2 inline md:hidden lg:inline"></i> Skill</a>
-				<a href="#contact" class="btn-content block my-1 text-center items-center gap-x-1 md:my-0 md:flex md:ms-2" role="buttonMenu" aria-label="linkToContact" tabindex="5"><i class="bx bxs-contact"></i> Contact</a>
-				<a id="darkMode" class="dark:bg-cyan-900 rounded-md md:rounded-full inline-block w-[100%] h-8 relative shadow mt-1 md:w-8 md:mt-0 overflow-hidden" role="button" aria-label="darkMode">
+				<a href="#home" class="font-poppins block md:inline p-2 md:p-0 rounded-md dark:text-slate-200 text-sm hover-menu md:hover:bg-transparent md:hover-menu-lg md:hover:text-white transition-all" role="buttonMenu" aria-label="linkToHome" tabindex="1" data-aos="fade-left" data-aos-delay="0"><i class="bx bx-home inline md:hidden lg:inline"></i> Home</a>
+				<a href="#about" class="font-poppins block md:inline p-2 md:p-0 rounded-md dark:text-slate-200 text-sm hover-menu md:hover:bg-transparent md:hover-menu-lg md:hover:text-white transition-all" role="buttonMenu" aria-label="linkToAbout" tabindex="2" data-aos="fade-left" data-aos-delay="100"><i class="bx bx-user-pin inline md:hidden lg:inline"></i> About</a>
+				<a href="#project" class="font-poppins block md:inline p-2 md:p-0 rounded-md dark:text-slate-200 text-sm hover-menu md:hover:bg-transparent md:hover-menu-lg md:hover:text-white transition-all" role="buttonMenu" aria-label="linkToProject" tabindex="3" data-aos="fade-left" data-aos-delay="200"><i class="bx bx-home inline md:hidden lg:inline"></i> Project</a>
+				<a href="#skill" class="font-poppins block md:inline p-2 md:p-0 rounded-md dark:text-slate-200 text-sm hover-menu md:hover:bg-transparent md:hover-menu-lg md:hover:text-white transition-all" role="buttonMenu" aria-label="linkToSkill" tabindex="4" data-aos="fade-left" data-aos-delay="300"><i class="bx bx-bar-chart-alt-2 inline md:hidden lg:inline"></i> Skill</a>
+				<a href="#contact" class="btn-content block my-1 text-center items-center gap-x-1 md:my-0 md:flex md:ms-2" role="buttonMenu" aria-label="linkToContact" tabindex="5" data-aos="fade-left" data-aos-delay="400"><i class="bx bxs-contact"></i> Contact</a>
+				<a id="darkMode" class="dark:bg-cyan-900 rounded-md md:rounded-full inline-block w-[100%] h-8 relative shadow mt-1 md:w-8 md:mt-0 overflow-hidden" role="button" aria-label="darkMode" data-aos="fade-left" data-aos-delay="500">
 					<i class="bx bxs-moon absolute start-[50%] -top-[50%] -translate-x-[50%] -translate-y-[50%] dark:text-slate-200 transition-[2s_ease-in-out]"></i>
 					<i class="bx bxs-sun absolute start-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] dark:text-slate-200 transition-[2s_ease-in-out]"></i>
 				</a>
 			</div>
 			<div class="flex justify-end basis-[70%] md:hidden">
-				<button id="btn-hamburger" type="button" class="" role="button" aria-label="buttonForViewMenu" aria-expanded="false" aria-controls="dialog-menu">
+				<button id="btn-hamburger" type="button" class="" role="button" aria-label="buttonForViewMenu" aria-expanded="false" aria-controls="dialog-menu" data-aos="fade-left" data-aos-delay="0">
 					<i class="bx bx-menu dark:text-white text-2xl"></i>
 				</button>
 			</div>
@@ -142,14 +146,14 @@
 	<section id="home">
 		<article class="container p-3 mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 items-center">
 			<section class="pe-3 py-8">
-				<p class="font-poppins dark:text-slate-200">Hello Everyone,</p>
-				<h1 class="font-oswald text-cyan-800 dark:text-white text-3xl">I,M M.Rafly Saputra</h1>
-				<h2 class="font-poppins dark:text-slate-100 text-lg mt-1">Front-End Dev Web & Back-End Dev Web</h2>
-				<p class="mt-2 font-poppins dark:text-slate-200 text-sm">Saya adalah seorang progammer pemula yang ingin menjadi seorang full-stack developer dibidang web & android saya lagi tahap pembelajaran dan akan terus belajar hingga cita-cita saya tercapai</p>
-				<a href="" class="btn-content mt-4 flex items-center justify-center hover:translate-x-1 w-[9rem] capitalize" role="button" aria-label="buttonViewProject">View to project <i class="bx bx-chevron-right text-lg"></i></a>
+				<p class="font-poppins dark:text-slate-200" data-aos="fade-down" data-aos-delay="0">Hello Everyone,</p>
+				<h1 class="font-oswald text-cyan-800 dark:text-white text-3xl" data-aos="fade-right" data-aos-delay="100">I,M M.Rafly Saputra</h1>
+				<h2 class="font-poppins dark:text-slate-100 text-lg mt-1" data-aos="fade-right" data-aos-delay="200">Front-End Dev Web & Back-End Dev Web</h2>
+				<p class="mt-2 font-poppins dark:text-slate-200 text-sm" data-aos="fade-right" data-aos-delay="300">Saya adalah seorang progammer pemula yang ingin menjadi seorang full-stack developer dibidang web & android saya lagi tahap pembelajaran dan akan terus belajar hingga cita-cita saya tercapai</p>
+				<a href="" class="btn-content mt-4 flex items-center justify-center hover:translate-x-1 w-[9rem] capitalize" role="button" aria-label="buttonViewProject" data-aos="fade-up" data-aos-delay="400">View to project <i class="bx bx-chevron-right text-lg"></i></a>
 			</section>
 			<section class="ps-3 py-8">
-				<img src="img/Asset 3.svg" alt="" class="w-[80%] mx-auto aspect-video md:aspect-square">
+				<img src="img/Asset 3.svg" alt="" class="w-[80%] mx-auto aspect-video md:aspect-square" data-aos="fade-left" data-aos-delay="500">
 			</section>
 		</article>
 	</section>
@@ -159,30 +163,30 @@
 	<section id="about">
 		<article class="container p-3 mx-auto py-10 grid grid-cols-1 justify-center">
 			<header class="text-center py-8">
-				<p class="text-main font-poppins">About Me</p>
-				<h1 class="dark:text-white font-poppins text-2xl font-bold">Tentang Saya</h1>
+				<p class="text-main font-poppins" data-aos="fade-up" data-aos-delay="0">About Me</p>
+				<h1 class="dark:text-white font-poppins text-2xl font-bold" data-aos="fade-up" data-aos-delay="100">Tentang Saya</h1>
 			</header>
 			<section class="py-8 grid grid-cols-1 gap-x-4 gap-y-3 justify-items-center lg:grid-cols-[1fr_30%]">
 
 				<div class="card font-poppins relative">
 					<section class="mb-6">
-						<h1 class="text-main text-lg mb-2">About Me</h1>
-						<p class="dark:text-slate-300 text-sm">Saya adalah seorang mahasiswa yang ingin terjun kedunia IT, saya sangat suka bermain komputer hingga saya bisa mempelajari beberapa bahasa pemrograman, saya akan terus belajar agar saya bisa menjadi seorang Full Stack Web Dev. Hobi saya adalah bermain komputer, suka mempelajari sesuatu yang saya suka dan memperdalam ilmu tersebut, suka membuat hal hal baru.</p>
+						<h1 class="text-main text-lg mb-2" data-aos="fade-up" data-aos-delay="100">About Me</h1>
+						<p class="dark:text-slate-300 text-sm" data-aos="fade-up" data-aos-delay="200">Saya adalah seorang mahasiswa yang ingin terjun kedunia IT, saya sangat suka bermain komputer hingga saya bisa mempelajari beberapa bahasa pemrograman, saya akan terus belajar agar saya bisa menjadi seorang Full Stack Web Dev. Hobi saya adalah bermain komputer, suka mempelajari sesuatu yang saya suka dan memperdalam ilmu tersebut, suka membuat hal hal baru.</p>
 					</section>
 					<section>
-						<h1 class="text-main text-lg mb-2">Media</h1>
+						<h1 class="text-main text-lg mb-2" data-aos="fade-up" data-aos-delay="300">Media</h1>
 						<div class="flex gap-x-2 items-center">
-							<a href="" class="w-8 h-8 rounded-md border border-green-500 flex hover:bg-green-500 group"><i class="bx bxl-whatsapp text-green-500 text-xl m-auto group-hover:text-white" role="link" aria-label="linkToWhatsaap"></i></a>
-							<a href="" class="w-8 h-8 rounded-md border border-pink-500 flex hover:bg-pink-500 group" role="link" aria-label="linkToInstagram"><i class="bx bxl-instagram text-pink-500 text-xl m-auto group-hover:text-white"></i></a>
-							<a href="" class="w-8 h-8 rounded-md border border-blue-600 flex hover:bg-blue-600 group" role="link" aria-label="linkToFacebook"><i class="bx bxl-facebook text-blue-600 text-xl m-auto group-hover:text-white"></i></a>
-							<a href="" class="w-8 h-8 rounded-md border border-black flex hover:bg-black group" role="link" aria-label="linkToGithub"><i class="bx bxl-github text-black text-xl m-auto group-hover:text-white"></i></a>
-							<a href="" class="w-8 h-8 rounded-md border border-black flex hover:bg-black group" role="link" aria-label="linkToTiktok"><i class="bx bxl-tiktok text-black text-xl m-auto group-hover:text-white"></i></a>
+							<a href="" class="w-8 h-8 rounded-md border border-green-500 flex hover:bg-green-500 group" data-aos="fade-up" data-aos-delay="400"><i class="bx bxl-whatsapp text-green-500 text-xl m-auto group-hover:text-white" role="link" aria-label="linkToWhatsaap"></i></a>
+							<a href="" class="w-8 h-8 rounded-md border border-pink-500 flex hover:bg-pink-500 group" role="link" aria-label="linkToInstagram" data-aos="fade-up" data-aos-delay="500"><i class="bx bxl-instagram text-pink-500 text-xl m-auto group-hover:text-white"></i></a>
+							<a href="" class="w-8 h-8 rounded-md border border-blue-600 flex hover:bg-blue-600 group" role="link" aria-label="linkToFacebook" data-aos="fade-up" data-aos-delay="600"><i class="bx bxl-facebook text-blue-600 text-xl m-auto group-hover:text-white"></i></a>
+							<a href="" class="w-8 h-8 rounded-md border border-black flex hover:bg-black group" role="link" aria-label="linkToGithub" data-aos="fade-up" data-aos-delay="700"><i class="bx bxl-github text-black text-xl m-auto group-hover:text-white"></i></a>
+							<a href="" class="w-8 h-8 rounded-md border border-black flex hover:bg-black group" role="link" aria-label="linkToTiktok" data-aos="fade-up" data-aos-delay="800"><i class="bx bxl-tiktok text-black text-xl m-auto group-hover:text-white"></i></a>
 						</div>
 					</section>
 				</div>
 
 				<div class="card font-poppins flex relative">
-					<img src="img/myFoto.jpg" alt="" class="w-[40%] m-auto rounded-md lg:w-[100%]">
+					<img src="img/myFoto.jpg" alt="" class="w-[40%] m-auto rounded-md lg:w-[100%]" data-aos="fade-up" data-aos-delay="900">
 				</div>
 
 			</section>
@@ -194,20 +198,20 @@
 	<section id="project">
 		<article class="container p-3 mx-auto py-10 grid grid-cols-1 justify-center">
 			<header class="text-center py-8">
-				<p class="text-main font-poppins">Project Me</p>
-				<h1 class="dark:text-white font-poppins text-2xl font-bold">Projek Saya</h1>
+				<p class="text-main font-poppins" data-aos="fade-up" data-aos-delay="100">Project Me</p>
+				<h1 class="dark:text-white font-poppins text-2xl font-bold" data-aos="fade-up" data-aos-delay="200">Projek Saya</h1>
 			</header>
 			<section class="py-8 grid grid-cols-1 lg:grid-cols-2 gap-x-3 gap-y-4">
-				<div class="card">
+				<div class="card" data-aos="fade-up" data-aos-delay="300">
 					
 				</div>
-				<div class="card">
+				<div class="card" data-aos="fade-up" data-aos-delay="400">
 					
 				</div>
-				<div class="card">
+				<div class="card" data-aos="fade-up" data-aos-delay="500">
 					
 				</div>
-				<div class="card">
+				<div class="card" data-aos="fade-up" data-aos-delay="600">
 					
 				</div>
 			</section>
@@ -219,19 +223,20 @@
 	<section id="skill">
 		<article class="container p-3 mx-auto py-10 grid grid-cols-1 justify-center">
 			<header class="text-center py-8">
-				<p class="text-main font-poppins">Skill Me</p>
-				<h1 class="dark:text-white font-poppins text-2xl font-bold">Skill Saya</h1>
+				<p class="text-main font-poppins" data-aos="fade-up" data-aos-delay="100">Skill Me</p>
+				<h1 class="dark:text-white font-poppins text-2xl font-bold" data-aos="fade-up" data-aos-delay="200">Skill Saya</h1>
 			</header>
 			<section class="py-8 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-2 gap-y-3 justify-center">
-				<div class="card flex"><img src="img/HTML.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all"></div>
-				<div class="card flex"><img src="img/CSS.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all"></div>
-				<div class="card flex"><img src="img/JS.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all"></div>
-				<div class="card flex"><img src="img/PHP.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all"></div>
-				<div class="card flex"><img src="img/GIT.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all"></div>
-				<div class="card flex"><img src="img/BOOTSTRAP.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all"></div>
-				<div class="card flex"><img src="img/MYSQL.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all"></div>
-				<div class="card flex"><img src="img/TAILWIND CSS.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all"></div>
+				<div class="card flex"><img src="img/HTML.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all" data-aos="fade-up" data-aos-delay="300"></div>
+				<div class="card flex"><img src="img/CSS.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all" data-aos="fade-up" data-aos-delay="300"></div>
+				<div class="card flex"><img src="img/JS.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all" data-aos="fade-up" data-aos-delay="400"></div>
+				<div class="card flex"><img src="img/PHP.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all" data-aos="fade-up" data-aos-delay="400"></div>
+				<div class="card flex"><img src="img/GIT.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all" data-aos="fade-up" data-aos-delay="500"></div>
+				<div class="card flex"><img src="img/BOOTSTRAP.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all" data-aos="fade-up" data-aos-delay="500"></div>
+				<div class="card flex"><img src="img/MYSQL.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all" data-aos="fade-up" data-aos-delay="600"></div>
+				<div class="card flex"><img src="img/TAILWIND CSS.png" alt="" class="m-auto w-[90%] lg:w-[100%] hover:-translate-y-[8px] hover:drop-shadow-lg transition-all" data-aos="fade-up" data-aos-delay="600"></div>
 			</section>
+			<div class="flex w-[100%] lg:w-2/3 m-auto flex justify-center items-center"><canvas id="myChart" class="w-[100%]" data-aos="fade-up" data-aos-delay="600"></canvas></div>
 		</article>
 	</section>
 	<!-- END SECTION SKILL -->
@@ -240,27 +245,27 @@
 	<section id="contact">
 		<article class="container p-3 mx-auto py-10 grid grid-cols-1 justify-center">
 			<header class="text-center py-8">
-				<p class="text-main font-poppins">Contact Me</p>
-				<h1 class="dark:text-white font-poppins text-2xl font-bold">Kontak Saya</h1>
+				<p class="text-main font-poppins" data-aos="fade-up" data-aos-delay="100">Contact Me</p>
+				<h1 class="dark:text-white font-poppins text-2xl font-bold" data-aos="fade-up" data-aos-delay="200">Kontak Saya</h1>
 			</header>
 			<section class="py-8 w-[100%] lg:w-[80%] mx-auto">
-				<div class="input-group">
+				<div class="input-group" data-aos="fade-up" data-aos-delay="300">
 					<label for="username" class="dark:text-white text-md">Username</label>
 					<input type="text" id="username" class="form-control mt-2">
 				</div>
-				<div class="input-group">
+				<div class="input-group" data-aos="fade-up" data-aos-delay="300">
 					<label for="email" class="dark:text-white text-md">Email</label>
 					<input type="text" id="email" class="form-control mt-2">
 				</div>
-				<div class="input-group">
+				<div class="input-group" data-aos="fade-up" data-aos-delay="300">
 					<label for="no-telp" class="dark:text-white text-md">No. Telp</label>
 					<input type="text" id="no-telp" class="form-control mt-2">
 				</div>
-				<div class="input-group">
+				<div class="input-group" data-aos="fade-up" data-aos-delay="300">
 					<label for="pesan" class="dark:text-white text-md">Pesan</label>
 					<textarea name="pesan" id="pesan" cols="30" rows="5" class="form-control mt-2"></textarea>
 				</div>
-				<div class="input-group">	
+				<div class="input-group" data-aos="fade-up" data-aos-delay="300">	
 					<button type="button" class="btn-content px-4">Kirim</button>
 				</div>
 			</section>
@@ -278,8 +283,43 @@
 	</footer>
 	<!-- END SECTION FOOTER -->
 
-
+<!-- MY JS -->
 <script type="module" src="js/script.js"></script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+  	duration: 500,
+  	once: true
+  });
+</script>
+
+<!-- CHART JS -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['HTML','CSS','JS','PHP','GIT','BOOTSTRAP','MYSQL','TAILWIND'],
+      datasets: [{
+        label: ['SKILL'],
+        data: [90,90,50,90,50,60,70,50],
+        borderWidth: 1,
+        backgroundColor: ['red','blue','orange','purple','red','white','blue','cyan'],
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
 
 </body>
 </html>
