@@ -1,5 +1,5 @@
-import { btnHamburger, dialogMenu, backToTop, btnDarkMode, html } from '../module/tag.js';
-import { cekScroll } from '../module/function.js';
+import { btnHamburger, dialogMenu, backToTop, btnDarkMode, html, namaJudul } from '../module/tag.js';
+import { cekScroll, textAnimation } from '../module/function.js';
 
 window.addEventListener('DOMContentLoaded', function() {
 
@@ -49,6 +49,8 @@ window.addEventListener('DOMContentLoaded', function() {
 		// }
 		
 	});
+
+	textAnimation(namaJudul);
 	
 })
 

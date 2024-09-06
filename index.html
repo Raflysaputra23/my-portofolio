@@ -36,6 +36,15 @@
   				}
   			}
 
+  			@keyframes show-hide {
+  				0% {
+  					@apply opacity-0
+  				}
+  				100% {
+  					@apply opacity-100
+  				}
+  			}
+
   		}
 
   		@layer utility {
@@ -90,6 +99,16 @@
   			.form-control {
   				@apply rounded-md px-3 py-2 outline-0 border w-[100%] focus:shadow-[0_0_10px_rgb(0,0,150)] transition-all;
   			}
+
+  			.textWrite::after {
+  				content: '';
+  				display: inline-block;
+  				margin: 0 0 0 5px;
+  				width: 3px;
+  				height: 40px;
+  				background-color: blue;
+  				animation: show-hide .7s ease infinite
+  			}
   		}
   		
   	</style>
@@ -143,11 +162,14 @@
 	<!-- KONTEN MAIN -->
 	<main>
 	<!-- HERO -->
-	<section id="home">
+	<section id="home" class="relative">
+		<div class="absolute hidden lg:block translate-x-[5rem] translate-y-[4rem] font-tillana start-0 top-0" style="writing-mode: vertical-lr;">
+			<h3 class="dark:text-white font-bold" data-aos="fade-up" data-aos-delay="300">- Website Portofolio -</h3>
+		</div>
 		<article class="container p-3 mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 items-center">
 			<section class="pe-3 py-8">
 				<p class="font-poppins dark:text-slate-200" data-aos="fade-down" data-aos-delay="0">Hello Everyone,</p>
-				<h1 class="font-oswald text-cyan-800 dark:text-white text-3xl" data-aos="fade-right" data-aos-delay="100">I,M M.Rafly Saputra</h1>
+				<h1 id="nama-judul" class="font-oswald text-cyan-800 dark:text-white text-3xl textWrite flex items-center" data-aos="fade-right" data-aos-delay="100">I,M M.Rafly Saputra</h1>
 				<h2 class="font-poppins dark:text-slate-100 text-lg mt-1" data-aos="fade-right" data-aos-delay="200">Front-End Dev Web & Back-End Dev Web</h2>
 				<p class="mt-2 font-poppins dark:text-slate-200 text-sm" data-aos="fade-right" data-aos-delay="300">Saya adalah seorang progammer pemula yang ingin menjadi seorang full-stack developer dibidang web & android saya lagi tahap pembelajaran dan akan terus belajar hingga cita-cita saya tercapai</p>
 				<a href="" class="btn-content mt-4 flex items-center justify-center hover:translate-x-1 w-[9rem] capitalize" role="button" aria-label="buttonViewProject" data-aos="fade-up" data-aos-delay="400">View to project <i class="bx bx-chevron-right text-lg"></i></a>
@@ -156,6 +178,13 @@
 				<img src="img/Asset 3.svg" alt="" class="w-[80%] mx-auto aspect-video md:aspect-square" data-aos="fade-left" data-aos-delay="500">
 			</section>
 		</article>
+		<div class="absolute hidden lg:flex end-0 bottom-0 flex-col -translate-x-[5rem] gap-y-3">
+			<a href="" class="w-8 h-8 rounded-md border border-green-500 flex hover:bg-green-500 group" data-aos="fade-up" data-aos-delay="400"><i class="bx bxl-whatsapp text-green-500 text-xl m-auto group-hover:text-white" role="link" aria-label="linkToWhatsaap"></i></a>
+			<a href="" class="w-8 h-8 rounded-md border border-pink-500 flex hover:bg-pink-500 group" role="link" aria-label="linkToInstagram" data-aos="fade-up" data-aos-delay="500"><i class="bx bxl-instagram text-pink-500 text-xl m-auto group-hover:text-white"></i></a>
+			<a href="" class="w-8 h-8 rounded-md border border-blue-600 flex hover:bg-blue-600 group" role="link" aria-label="linkToFacebook" data-aos="fade-up" data-aos-delay="600"><i class="bx bxl-facebook text-blue-600 text-xl m-auto group-hover:text-white"></i></a>
+			<a href="" class="w-8 h-8 rounded-md border border-black flex hover:bg-black group" role="link" aria-label="linkToGithub" data-aos="fade-up" data-aos-delay="700"><i class="bx bxl-github text-black text-xl m-auto group-hover:text-white"></i></a>
+			<a href="" class="w-8 h-8 rounded-md border border-black flex hover:bg-black group" role="link" aria-label="linkToTiktok" data-aos="fade-up" data-aos-delay="800"><i class="bx bxl-tiktok text-black text-xl m-auto group-hover:text-white"></i></a>
+		</div>
 	</section>
 	<!-- END HERO -->
 
